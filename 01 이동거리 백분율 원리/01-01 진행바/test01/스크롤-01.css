@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: #ddd;
+}
+
+/* 헤더 */
+.header {
+
+}
+
+.header__title {
+  padding: 40px 0;
+
+  font-size: 80px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* 본문 */
+.article {
+
+}
+
+/* 진행바 */
+.progress {
+  width: 70%;
+  height: 100px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: 3px solid #222;
+}
+
+.progress__bar {
+  width: 0;
+  height: 100%;
+
+  background-color: #03a9f4;
+}
+
+.progress__percent {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+}
+
+/* 컨텐츠 */
+.content {
+  font-size: 120px;
+}
