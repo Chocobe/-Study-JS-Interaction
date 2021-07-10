@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sec01 {
+  background-color: #ddd;
+}
+
+.content {
+  font-size: 170px;
+}
+
+.progress {
+  width: 70%;
+  height: 100px;
+
+  position: fixed;
+  top: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border: 1px solid #222;
+
+  text-align: center;
+}
+
+.bar {
+  width: 0;
+  height: 100%;
+
+  display: block;
+
+  background-color: #111;
+
+  transition: width 0.25s ease;
+}
+
+.txt {
+  font-size: 30px;
+}
+
+.com_tit {
+  padding: 100px 0 80px;
+
+  font-size: 70px;
+  text-align: center;
+}
+
+.com_txt {
+  max-width: 70%;
+
+  margin: 0 auto;
+
+  font-size: 30px;
+  text-align: center;
+}
