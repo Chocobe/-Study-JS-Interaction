@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+.wrap {
+
+}
+
+.sec01 {
+
+}
+
+/* 제목 */
+.sec01__title {
+  padding: 100px 0 80px;
+
+  font-size: 70px;
+  text-align: center;
+}
+
+/* 무한 겔러리 */
+.infiniteGallery {
+
+}
+
+/* 무한 겔러리 목록 */
+.infiniteGallery__list {
+  padding: 10px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.infiniteGallery__item {
+
+}
+
+.imgWrapper {
+  background-color: #ff1493;
+}
+
+.img {
+  width: 100%;
+
+  display: block;
+}
+
+/* 푸터 */
+.footer {
+  padding: 50px 20px;
+
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
+
+  background-color: #3b3b3b;
+}
