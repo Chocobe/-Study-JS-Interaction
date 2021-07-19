@@ -313,5 +313,100 @@ Google에서 사용중인 무한스크롤에는 ``상세 페이지``를 바로 �
 }
 ```
 
+
+
 <br/>
 
+[🔺 Top](#top)
+
+<hr/><br/>
+
+
+
+## 02-02. keyframes
+
+CSS의 ``animation`` 속성은, 동작을 정의하는 기능인 ``keyframes``를 사용합니다.
+
+``keyframes``는 요소의 변화에 대해 ``to ~ from`` 또는 ``0% ~ 100%`` 형식으로 정의할 수 있습니다.
+
+```css
+@keyframes myAnim {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+```
+
+<br/>
+
+```css
+@keyframes myAnim {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+```
+
+<br/>
+
+이제 ``keyframes``을 설정하는 ``animation`` 속성에 대해 알아보겠습니다.
+
+``animation`` 속성은 총 ``8가지`` 설정을 할 수 있습니다.
+
+다음 코드는 ``animation`` 속성의 ``8가지`` 속성을 개별로 설정한 방식입니다.
+
+```css
+.myModel {
+  /* animation 으로 동작시킬 keyframes명 */
+  animation-name: myAnim;
+
+  /* animation의 1주기가 동작할 시간: 3초에 걸쳐 keyframes 동작 */
+  animation-duration: 3s;
+
+  /* animation이 동작하기 전, 대기할 시간: 2초 대기 후 동작 */
+  animation-delay: 2s;
+
+  /* animation 반복 횟수: 무한반복 */
+  animation-iteration-count: infinite;
+
+  /* animation의 동작 방향: 역방향 */
+  animation-direction: reverse;
+
+  /* animation 가속도: 등가속 */
+  animation-timing-function: linear;
+
+  /* animation 경계의 스타일 처리방식 설정: 시작과 끝의 스타일을 유지 */
+  animation-fill-mode: both;
+
+  /* animation의 "Run" 또는 "Pause" 설정 */
+  animation-play-state: running;
+}
+```
+
+
+
+<br/>
+
+[🔺 Top](#top)
+
+<hr/><br/>

@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.aniSample {
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+}
+
+.aniSample__title {
+  padding: 20px;
+
+  font-size: 70px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.aniSample__buttonWrapper {
+  display: flex;
+  justify-content: center;
+}
+.aniSample__button {
+  margin: 0 10px;
+  padding: 5px 10px;
+
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.aniSample__modelWrapper {
+  width: 200px;
+
+  margin: 200px auto;
+
+  animation-name: moveModel;
+  animation-duration: 4s;
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+
+  animation-play-state: paused;
+}
+
+.aniSample__modelWrapper--play {
+  animation-play-state: running;
+}
+
+.aniSample__model {
+  width: 100%;
+}
+
+@keyframes moveModel {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  25% {
+    transform: translate(-200px, 200px);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  75% {
+    transform: translate(200px, 200px);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
