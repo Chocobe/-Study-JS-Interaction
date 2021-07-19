@@ -410,3 +410,35 @@ CSS의 ``animation`` 속성은, 동작을 정의하는 기능인 ``keyframes``�
 [🔺 Top](#top)
 
 <hr/><br/>
+
+
+
+## 02-03. 가속도 (``animation-timing-function``)
+
+``animation``을 역동적으로 만들어 주는 ``가속도 (animation-timing-function)``에 대해 알아보겠습니다.
+
+가속도는 다음과 같은 설정을 할 수 있습니다.
+
+* ``linear``: 등가속
+* ``ease``: 느린속도 -> 빠른속도 -> 느린속도
+* ``ease-in``: 천천히 시작
+* ``ease-out``: 천천히 종료
+* ``ease-in-out``: 천천히 시작하여 천천히 종료
+* ``cubic-bezier(a, b, c, d)``: 사용자 정의 함수
+
+<br/>
+
+``사용자 정의 함수``인 ``cubic-bezier()``는 ``브라우저 개발자 도구``를 사용하여 작성하면 좀 더 편하게 만들 수 있습니다.
+
+* Google 에서 ``cubiz bezier`` 를 검색하면 무료 생성기를 사용하여 만들 수 있습니다.
+
+
+
+<br/>
+
+[🔺 Top](#top)
+
+<hr/><br/>
+
+
+
