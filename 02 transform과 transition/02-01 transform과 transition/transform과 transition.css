@@ -1,0 +1,83 @@
+/* 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+.wrap {
+  overflow: hidden;
+}
+.article {
+
+}
+.section {
+
+}
+
+/* 제목 */
+.section__title {
+  margin: 100px 0 80px;
+
+  font-size: 70px;
+  text-align: center;
+}
+
+/* 샘플 리스트 */
+.sample__list {
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  grid-gap: 20px;
+}
+.sample__item {
+
+}
+.imgWrapper {
+  width: 100%;
+
+  transition: transform 1.5s;
+}
+.imgWrapper--rotate {
+  transform: rotate(360deg);
+}
+.imgWrapper--scale {
+  transform: scale(1.2);
+}
+.imgWrapper--skew {
+  transform: skew(15deg);
+}
+.imgWrapper--translate {
+  transform: translate(50px, 50px);
+}
+.img {
+  width: 100%;
+
+  object-fit: cover;
+}
+
+/* 버튼 */
+.sample__buttonWrapper {
+  display: flex;
+  justify-content: center;
+}
+.sample__button {
+  margin: 20px 10px 0;
+  padding: 5px 10px;
+
+  font-size: 24px;
+  font-weight: 900;
+}
+.sample__content {
+  display: block;
+
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+}

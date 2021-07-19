@@ -259,3 +259,59 @@ Google에서 사용중인 무한스크롤에는 ``상세 페이지``를 바로 �
 
 
 
+## 02-01. CSS의 ``transform``과 ``transition``
+
+``transform``은 용소의 ``전환``을 말합니다.
+
+종류는 다음과 같습닌다.
+
+* ``rotate``: 회전
+* ``scale``: 줌인, 줌아웃
+* ``skew``: 기울기
+* ``translate``: 이동
+
+<br/>
+
+``transition``을 사용하면 요소의 전환을 Animation 으로 나타냅니다.
+
+
+
+<br/>
+
+[🔺 Top](#top)
+
+<hr/><br/>
+
+
+
+## 02-01. 벤더프리픽스
+
+``벤더프리픽스``는 각 브라우저별 ``CSS 기능``을 정상적으로 적용시키기 위한 방법 입니다.
+
+브라우저별의 버전에 따라서도 ``벤더프리픽스``가 필요할 수 있는데, 이러한 정보는 [https://caniuse.com/](https://caniuse.com/) 에서 확인 할 수 있습니다.
+
+<br/>
+
+아래 이미지는 ``transition``을 검색한 결과 입니다.
+
+<img src="./readmeAssets/02%2001%20벤더프리픽스%2001.png" alt="02-01. 벤더프리픽스" width="1200px"><br/>
+
+<br/>
+
+검색한 결과에서 알게된 ``벤더프리픽스``는 다음과 같습니다.
+
+* ``chrome 4-25 이하`` 버전에서는 ``transition`` 사용 시, ``-webkit-`` 벤더프리픽스가 있어야 합니다.
+
+<br/>
+
+벤더프리픽스를 사용하면 다음과 같습니다.
+
+```css
+.myBox {
+  transition: transform 1s;
+  -webkit-transition: transform 1s;
+}
+```
+
+<br/>
+
