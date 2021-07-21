@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+
+}
+
+.motion {
+  width: 300px;
+
+  position: relative;
+}
+
+.motion__position {
+  /*margin-left: -150px;*/
+
+  position: absolute;
+  top: 0;
+  /*left: 50%;*/
+
+  /*font-size: 0;*/
+}
+
+.motion__body {
+  /*z-index: 1;*/
+}
+
+.motion__hand {
+  transform-origin: 199px 163px;
+  -webkit-transform-origin: 199px 163px;
+
+  animation-name: shakeHand;
+  animation-duration: 0.8s;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+
+  animation-play-state: running;
+}
+
+.motion__body,
+.motion__hand {
+  width: 100%;
+}
+
+@keyframes shakeHand {
+  from {
+    transform: rotate(-14deg);
+  }
+
+  to {
+    transform: rotate(4deg);
+  }
+}
