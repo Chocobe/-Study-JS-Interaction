@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+
+}
+
+.motion__area {
+  width: 100%;
+  height: 6000px;
+
+  position: relative;
+
+  background-color: #03a9f4;
+}
+
+/* 배경 이미지 */
+.motionBg {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+
+  transition: opacity 1s;
+}
+
+.motionBg--one {
+  background-image: url("./images/motion_sky1.gif");
+}
+.motionBg--two {
+  background-image: url("./images/motion_sky2.gif");
+}
+.motionBg--three {
+  background-image: url("./images/motion_sky3.gif");
+}
+.motionBg--four {
+  background-image: url("./images/motion_sky4.gif");
+}
+
+.motionBg--active {
+  opacity: 1;
+}
+
+/* 로프 */
+.motionRope {
+  width: 20px;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 100px;
+
+  background-image: url("./images/motion_rope.png");
+  background-size: 20px;
+  background-repeat: repeat-y;
+}
+
+/* 캐릭터 */
+.motionCharacter {
+  width: 300px;
+
+  position: fixed;
+  top: 100px;
+  left: 95px;
+}
+
+/* 캐릭터 - 바디 */
+.motionCharacter__bodyWrapper {
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.motionCharacter__body {
+  width: 100%;
+}
+
+/* 캐릭터 - 팔 */
+.motionCharacter__armWrapper {
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.motionCharacter__arm {
+  width: 100%;
+
+  transform-origin: 199px 163px;
+
+  animation-name: animCharacter;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+
+  animation-play-state: running;
+}
+
+@keyframes animCharacter {
+  from {
+    transform: rotateZ(-14deg);
+  }
+
+  to {
+    transform: rotateY(4deg);
+  }
+}
+
+@-webkit-keyframes animCharacter {
+  from {
+    transform: rotateZ(-14deg);
+  }
+
+  to {
+    transform: rotateY(4deg);
+  }
+}
+
+/* 달 */
+.motionMoon__wrapper {
+  width: 200px;
+
+  position: fixed;
+  top: 0;
+  right: 100px;
+}
+
+.motionMoon__img {
+  width: 100%;
+
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.motionMoon__img--active {
+  transform: translateY(100px);
+  opacity: 1;
+}
